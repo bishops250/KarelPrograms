@@ -13,5 +13,48 @@ public class KarelFigureEight {
 
         // Your code goes below here
 
+        karel.turnLeft();
+        karel.move();
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.move();
+        karel.move();
+
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.turnLeft();
+
+        karel.move();
+        karel.move();
+        karel.turnLeft();
+        karel.move();
+        karel.move();
+
+        karel.turnLeft();
+        karel.move();
+        karel.move();
+        karel.turnLeft();
+        karel.move();
+        karel.move();
+
+        karel.turnLeft();
+        karel.move();
+        karel.move();
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.move();
+        karel.move();
+
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.move();
+        karel.turnLeft();
+        karel.turnLeft();
+        karel.turnLeft();
+
+
     }
 }

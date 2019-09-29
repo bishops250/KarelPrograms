@@ -9,7 +9,7 @@ public class KarelThree {
         Robot karel = new Robot(ssfs,0, 0, Direction.SOUTH, 1);
 
 
-        Robot carl = new Robot(ssfs,3, 0, Direction.EAST, 0);
+        Robot carl = new Robot(ssfs,0, 3, Direction.EAST, 0);
 
         karel.turnLeft();
         karel.turnLeft();

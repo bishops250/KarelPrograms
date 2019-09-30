@@ -3,11 +3,9 @@ import java.util.Scanner;
 
 public class RectangleFun {
 
-    public static void main(String[]args){
+    public static void main(String[] args) {
 
-        int rectangle_x_coordinate, rectangle_y_coordinate;
-
-        double rectangle_width, rectangle_height, rectangle_height, rectangle_width;
+        int rectangle_x_coordinate, rectangle_y_coordinate, rectangle_width, rectangle_height;
 
         Scanner user_input = new Scanner(System.in);
 
@@ -24,12 +22,11 @@ public class RectangleFun {
         System.out.println("Please enter the length of the rectangle: ");
         rectangle_height = user_input.nextInt();
 
-        Point point_rectangle = new Point(rectangle_x_coordinate,rectangle_y_coordinate);
-
-
-
+        Rectangle printed_rectangle = new Rectangle(rectangle_x_coordinate, rectangle_y_coordinate, rectangle_width, rectangle_height);
 
 
     }
+
+}
 
 

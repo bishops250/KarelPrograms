@@ -18,6 +18,7 @@ public class FourRectanglePrinter {
         int rectangle_height = user_input.nextInt();
 
         Rectangle rectangle_one= new Rectangle(rectangle_width,rectangle_height);
+        System.out.println(rectangle_one);
         //creates the first rectangle at 0,0
         rectangle_one.translate(2,0);
         System.out.println(rectangle_one);

@@ -19,7 +19,7 @@ public class RectangleFun {
         System.out.println("Please enter the width of the rectangle: ");
         rectangle_width = user_input.nextInt();
 
-        System.out.println("Please enter the length of the rectangle: ");
+        System.out.println("Please enter the height of the rectangle: ");
         rectangle_height = user_input.nextInt();
 
         Rectangle printed_rectangle = new Rectangle(rectangle_x_coordinate, rectangle_y_coordinate,
@@ -32,8 +32,7 @@ public class RectangleFun {
        System.out.println("Perimeter: " + (( printed_rectangle.getHeight() * printed_rectangle.getWidth()) * 2));
        System.out.println("Original Location: " + "(" + printed_rectangle.getX() + " , " + printed_rectangle.getY() + ")");
 
-
-       printed_rectangle.setLocation(4,2);
+       printed_rectangle.translate(4,2);
         System.out.println("The New Location is: " + printed_rectangle.getLocation());
 
 

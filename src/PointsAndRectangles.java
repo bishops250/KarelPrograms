@@ -7,6 +7,7 @@ public class PointsAndRectangles {
 
         int x_coordinate, y_coordinate, rectangle_length, rectangle_width;
 
+        //Prompts user for location, width, and height of the rectangle.
 
         Scanner user_input = new Scanner(System.in);
 
@@ -22,9 +23,11 @@ public class PointsAndRectangles {
         System.out.println("Please enter the length of the rectangle: ");
         rectangle_length = user_input.nextInt();
 
-        Point point_rectangle = new Point(x_coordinate,y_coordinate);
+        Point point_rectangle = new Point(x_coordinate,y_coordinate); /*turns the x, y user enter into a point. So to
+        call for both coordinates you only need to use the variable point_rectangle*/
 
         Dimension rectangle_dimension = new Dimension(rectangle_width, rectangle_length);
+        // rectangle_dimensions is a variable that stores rectangle_width, and rectangle_length together as one
 
         Rectangle rectangle = new Rectangle(point_rectangle,rectangle_dimension);
 

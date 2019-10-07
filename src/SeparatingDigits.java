@@ -4,40 +4,40 @@ public class SeparatingDigits {
 
 
 
-    static void quotient_of_a_b() {
+    private static int quotient_of_a_b(int num_a) {
+
+        return num_a / 10;
+
+    }
+
+    private static int remainder_of_a_b(int num_a) {
+
+
+        return num_a % 10;
+
+    }
+
+    private static void display_digits(int digit) {
+ System.out.print(digit + " ");
+
+
+    }
+    public static void main(String[]args){
 
         Scanner user_input = new Scanner(System.in);
 
-         int num_a, num_b, quotient_num_a_b;
+        int num_a;
 
-         System.out.println("Please enter the first number you would like divided: ");
-         num_a = user_input.nextInt();
+        System.out.println("Please enter the first number you would like divided: ");
+        num_a = user_input.nextInt();
 
-        System.out.println("Please enter the second number you would like divided: ");
-         num_b = user_input.nextInt();
+        int quotient_answer = quotient_of_a_b(num_a);
+               int remainder_answer = remainder_of_a_b(num_a);
+               int remainder2_answer = remainder_of_a_b(num_a / 10);
+               display_digits(remainder_answer);
+               display_digits(remainder2_answer);
 
-         quotient_num_a_b = num_a / num_b;
-         System.out.println("The quotient of "  + num_a + " and " + num_b + " = " + quotient_num_a_b);
-
-
-
-    }
-
-    static void remainder_of_a_b() {
-        int num_a, num_b, quotient_num_a_b;
-        num_a = 2;
-        num_b = 3;
-        quotient_num_a_b = num_a % num_b;
-        System.out.println("The remainder of "  + num_a + " and " + num_b + " = " + quotient_num_a_b);
-
-    }
-
-    public static void main(String[]args){
-
-        quotient_of_a_b();
-
-        remainder_of_a_b();
-
+//do the remainder again to get the quotient
 
     }
 }

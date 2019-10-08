@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.*;
 
 public class SeparatingDigits {
 
@@ -33,9 +34,10 @@ public class SeparatingDigits {
 
         int quotient_answer = quotient_of_a_b(num_a);
                int remainder_answer = remainder_of_a_b(num_a);
-               int remainder2_answer = remainder_of_a_b(num_a / 10);
-               display_digits(remainder_answer);
-               display_digits(remainder2_answer);
+               display_digits(quotient_answer + remainder_answer);
+
+
+
 
 //do the remainder again to get the quotient
 

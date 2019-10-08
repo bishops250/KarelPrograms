@@ -33,8 +33,19 @@ public class SeparatingDigits {
         num_a = user_input.nextInt();
 
         int quotient_answer = quotient_of_a_b(num_a);
-               int remainder_answer = remainder_of_a_b(num_a);
-               display_digits(quotient_answer + remainder_answer);
+
+        display_digits(quotient_answer);
+
+        quotient_answer /= 100;
+
+        display_digits(quotient_answer);
+
+        int remainder_answer = remainder_of_a_b(num_a);
+
+        display_digits(remainder_answer);
+
+
+
 
 
 

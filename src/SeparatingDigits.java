@@ -32,23 +32,24 @@ public class SeparatingDigits {
         System.out.println("Please enter the first number you would like divided: "); //asks for the users for digit number
         num_a = user_input.nextInt();
 
-        int quotient_answer = quotient_of_a_b(num_a); // its the intial value the user inputted
+        int quotient_answer = quotient_of_a_b(num_a); // its the initial value the user inputted
 
         int fourth_digit = remainder_of_a_b(num_a); //gives the final digit
 
-        int answer_five = remainder_of_a_b(quotient_answer); //does 543%10 =3 s third digit
+        int third_digit = remainder_of_a_b(quotient_answer); //does 543%10 =3 s third digit
 
-        int answer_two = quotient_of_a_b(quotient_answer); // does 543/10= 54
+        int num_digit = quotient_of_a_b(quotient_answer); // does 543/10= 54
 
-        int answer_three = quotient_of_a_b(answer_two); //gives you the first digit
+        int first_digit = quotient_of_a_b(num_digit); //gives you the first digit
 
-        int answer_four = remainder_of_a_b(answer_two); // does 54%10 = 4 second digit
+        int second_digit = remainder_of_a_b(num_digit); // does 54%10 = 4 second digit
 
 
+        /* prints the four digits separately. */
 
-        display_digits(answer_three);
-        display_digits(answer_four);
-        display_digits(answer_five);
+        display_digits(first_digit); 
+        display_digits(second_digit);
+        display_digits(third_digit);
         display_digits(fourth_digit);
 
 

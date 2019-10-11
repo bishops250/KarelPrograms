@@ -47,7 +47,7 @@ public class SeparatingDigits {
 
         /* prints the four digits separately. */
 
-        display_digits(first_digit); 
+        display_digits(first_digit);
         display_digits(second_digit);
         display_digits(third_digit);
         display_digits(fourth_digit);

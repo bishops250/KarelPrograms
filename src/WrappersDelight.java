@@ -18,6 +18,10 @@ public class WrappersDelight {
          num1 = (int) (num2 + num4);
 
 
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+        System.out.println(num4);
 
 
     }

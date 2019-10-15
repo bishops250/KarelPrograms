@@ -22,23 +22,26 @@ public class Password {
         System.out.println("Please enter your age: ");
         users_age = user_input.nextInt();
 
-        int first_name_string_length = (first_name.length()/2);
-        int middle_name_string_length = (middle_name.length()/2);
-        int last_name_string_length = (last_name.length()/2);
+        int first_name_mid_length = (first_name.length()/2);
+        int middle_name_mid_length = (middle_name.length()/2);
+        int last_name_mid_length = (last_name.length()/2);
+        int first_name_length = first_name.length();
+        int middle_name_length = middle_name.length();
+        int last_name_length = last_name.length();
 
 
-        users_password = (first_name.substring(first_name_string_length,first_name_string_length).toUpperCase()
-                + middle_name.substring(middle_name_string_length,middle_name_string_length).toUpperCase() +
-                last_name.substring(last_name_string_length, last_name_string_length).toUpperCase() +
-                first_name.substring(first_name.length()).toLowerCase() +
-                middle_name.substring(middle_name.length()).toLowerCase() +
-                last_name.substring(last_name.length()).toLowerCase() + (users_age * 75));
+        users_password = "" + ((first_name.substring(first_name_mid_length,first_name_mid_length).toUpperCase()))
+                + (middle_name.substring(middle_name_mid_length,middle_name_mid_length).toUpperCase()) +
+                (last_name.substring(last_name_mid_length, last_name_mid_length).toUpperCase()) +
+                (first_name.substring(first_name.length(),first_name.length()).toLowerCase()) +
+                (middle_name.substring(middle_name.length(),middle_name.length()).toLowerCase()) +
+                (last_name.substring(last_name.length(),last_name.length()).toLowerCase()) + (users_age * 75);
 
-        System.out.println(first_name);
-        System.out.println(middle_name);
-        System.out.println(last_name);
-        System.out.println(users_age);
-        System.out.println(users_password);
+        System.out.println("First name: " + first_name);
+        System.out.println("Middle name: " + middle_name);
+        System.out.println("Last name: " + last_name);
+        System.out.println("Age: " + users_age);
+        System.out.println("password: " + users_password);
 
 
 

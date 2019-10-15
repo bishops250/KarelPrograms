@@ -25,9 +25,21 @@ public class Password {
         int first_name_string_length = (first_name.length()/2);
         int middle_name_string_length = (middle_name.length()/2);
         int last_name_string_length = (last_name.length()/2);
-        String first_name_string_length =;
 
-        users_password =
+
+        users_password = (first_name.substring(first_name_string_length,first_name_string_length).toUpperCase()
+                + middle_name.substring(middle_name_string_length,middle_name_string_length).toUpperCase() +
+                last_name.substring(last_name_string_length, last_name_string_length).toUpperCase() +
+                first_name.substring(first_name.length()).toLowerCase() +
+                middle_name.substring(middle_name.length()).toLowerCase() +
+                last_name.substring(last_name.length()).toLowerCase() + (users_age * 75));
+
+        System.out.println(first_name);
+        System.out.println(middle_name);
+        System.out.println(last_name);
+        System.out.println(users_age);
+        System.out.println(users_password);
+
 
 
 

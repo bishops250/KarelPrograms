@@ -33,9 +33,9 @@ public class Password {
         users_password = "" + first_name.substring(first_name_mid_length,first_name_mid_length+1).toUpperCase()
                 + middle_name.substring(middle_name_mid_length,middle_name_mid_length+1).toUpperCase() +
                 (last_name.substring(last_name_mid_length, last_name_mid_length+1).toUpperCase()) +
-                (first_name.substring(first_name.length(),first_name.length()).toLowerCase()) +
-                (middle_name.substring(middle_name.length(),middle_name.length()).toLowerCase()) +
-                (last_name.substring(last_name.length(),last_name.length()).toLowerCase()) + (users_age * 75);
+                (first_name.substring(first_name.length()-1).toLowerCase()) +
+                (middle_name.substring(middle_name.length()-1).toLowerCase()) +
+                (last_name.substring(last_name.length()-1).toLowerCase()) + (users_age * 75);
         System.out.println("First name: " + first_name);
         System.out.println("Middle name: " + middle_name);
         System.out.println("Last name: " + last_name);

@@ -10,7 +10,7 @@ public class FightSong {
 
     private static void verse_2_fight_song() {
 
-        System.out.println("Go, team, go!\nYou can do it.\nYou're the best,\nIn the West.\nGo, team, go!\nYou can do it.");
+        System.out.println("You're the best,\nIn the West.");
 
     }
 
@@ -18,10 +18,17 @@ public class FightSong {
 
         verse_1_fight_song();
         blank_space();
+
+        verse_1_fight_song();
         verse_2_fight_song();
+        verse_1_fight_song();
         blank_space();
+
+        verse_1_fight_song();
         verse_2_fight_song();
+        verse_1_fight_song();
         blank_space();
+
         verse_1_fight_song();
 
     }

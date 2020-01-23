@@ -11,22 +11,18 @@ public class KarelThree {
 
         Robot carl = new Robot(ssfs,0, 3, Direction.EAST, 0);
 
-        karel.turnLeft();
-        karel.turnLeft();
-        karel.turnLeft();
+        karel.turnLeft(); //Completes First Action-Place Thing by Carl
         karel.move();
         karel.move();
         karel.move();
         karel.putThing();
 
-
-        karel.turnLeft();
         karel.turnLeft();
         karel.turnLeft();
         karel.move();
         karel.move();
         karel.move();
-        karel.putThing();
+        karel.turnLeft();
 
         carl.pickThing();
         carl.turnLeft();
@@ -38,9 +34,16 @@ public class KarelThree {
 
         carl.turnLeft();
         carl.turnLeft();
+        carl.move();
+        carl.move();
         carl.turnLeft();
+        carl.turnLeft();
+        carl.turnLeft();
+      /*
+
+        c
         carl.move();
-        carl.move();
+        carl.move();*/
 
 
     }

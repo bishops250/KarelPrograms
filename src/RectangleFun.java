@@ -31,14 +31,14 @@ public class RectangleFun {
        System.out.println("Height: "+ printed_rectangle.getHeight());
        System.out.println("X: " + printed_rectangle.getX());
        System.out.println("Y: " + printed_rectangle.getY());
-       System.out.println("Perimeter: " + (( printed_rectangle.getHeight() * printed_rectangle.getWidth()) * 2));
+       System.out.println("Perimeter: " + (( printed_rectangle.getHeight() + printed_rectangle.getWidth()) * 2));
 
        /*solves for perimeter by utilzing built in rectangle method to find height and width and multiply it to get the
         perimeter */
 
        System.out.println("Original Location: " + "(" + printed_rectangle.getX() + " , " + printed_rectangle.getY() + ")");
 
-       printed_rectangle.translate(4,2);
+       printed_rectangle.translate(-4,2);
         System.out.println("The New Location is: " + printed_rectangle.getLocation());
 
 
